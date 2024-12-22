@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.androidwalajoker.pbank.CheckBalance"
+        android:layout_width="match_parent"
+        android:layout_height="660dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonBalance"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#5038ED"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Balance" />
+
+        <Button
+            android:id="@+id/buttonDebit"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#5038ED"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Debit" />
+
+        <Button
+            android:id="@+id/buttonCredit"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#5038ED"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Credit" />
+    </LinearLayout>
+</LinearLayout>
